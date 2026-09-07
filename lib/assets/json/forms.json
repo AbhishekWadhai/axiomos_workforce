@@ -1,0 +1,894 @@
+[
+  {
+    "_id": "66b34b204ecde7c5bfeab155",
+    "Page": "requirements",
+    "PageFields": [
+      {
+        "Title": "Trade Name",
+        "Headers": "tradeName",
+        "Type": "dropdown",
+        "endpoint": "labour-categories",
+        "key": "name"
+      },
+      {
+        "Title": "Contractor",
+        "Headers": "contractor",
+        "Type": "dropdown",
+        "endpoint": "contractors",
+        "key": "name"
+      },
+      {
+        "Title": "Planned Workers",
+        "Headers": "plannedWorkers",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab158",
+        "key": "numeric"
+      },
+      {
+        "Title": "Shift",
+        "Headers": "shift",
+        "Type": "simpledropdown",
+        "Options": [
+          "General Shift",
+          "Morning Shift",
+          "Evening Shift",
+          "Night Shift",
+          "Rotational Shift"
+        ],
+        "_id": "66b34b204ecde7c5bfeab193"
+      },
+
+      {
+        "Title": "Work Activity",
+        "Headers": "workActivity",
+        "Type": "CustomTextField",
+
+        "_id": "66b34b204ecde7c5bfeab164"
+      },
+      {
+        "Title": "Remarks",
+        "Headers": "remarks",
+        "Type": "CustomTextField",
+
+        "_id": "66b34b204ecde7c5bfeab164"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab155",
+    "Page": "permanentAddress",
+    "PageFields": [
+      {
+        "Title": "Line 1",
+        "Headers": "line1",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab156"
+      },
+
+      {
+        "Title": "Village/Town/City",
+        "Headers": "village",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab158"
+      },
+
+      {
+        "Title": "Pincode",
+        "Headers": "pincode",
+        "Type": "CustomTextField",
+
+        "_id": "66b34b204ecde7c5bfeab164",
+        "key": "numeric"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab167",
+    "Page": "identity",
+    "PageFields": [
+      {
+        "Title": "Aadhaar URL",
+        "Headers": "aadhaarUrl",
+        "Type": "imagepicker",
+        "endpoint": "idProof",
+        "_id": "66b34b204ecde7c5bfeab168"
+      },
+      {
+        "Title": "Aadhaar Number",
+        "Headers": "aadhaarNo",
+        "Type": "CustomTextField",
+        "key": "numeric",
+        "_id": "66b34b204ecde7c5bfeab169"
+      },
+      {
+        "Title": "UAN Number",
+        "Headers": "uanNo",
+        "Type": "CustomTextField",
+        "key": "numeric",
+        "_id": "66b34b204ecde7c5bfeab170"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab171",
+    "Page": "emergencyContact",
+    "PageFields": [
+      {
+        "Title": "Name",
+        "Headers": "name",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab172"
+      },
+      {
+        "Title": "Relationship",
+        "Headers": "relationship",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab173"
+      },
+      {
+        "Title": "Mobile Number",
+        "Headers": "mobile",
+        "Type": "CustomTextField",
+        "key": "numeric",
+        "_id": "66b34b204ecde7c5bfeab174"
+      }
+    ],
+    "__v": 0
+  },
+
+  {
+    "_id": "66b34b204ecde7c5bfeab192",
+    "Page": "skills",
+    "PageFields": [
+      {
+        "Title": "Skill Name",
+        "Headers": "name",
+        "Type": "simpledropdown",
+        "Options": [
+          "General Labour",
+          "Mason",
+          "Carpenter",
+          "Electrician",
+          "Plumber",
+          "Welder",
+          "Bar Bender",
+          "Shuttering Carpenter",
+          "Painter",
+          "Scaffolder"
+        ],
+        "_id": "66b34b204ecde7c5bfeab193"
+      },
+      {
+        "Title": "Experience in Years",
+        "Headers": "experienceYears",
+        "Type": "CustomTextField",
+        "key": "numeric",
+        "_id": "66b34b204ecde7c5bfeab156"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab194",
+    "Page": "bankDetails",
+    "PageFields": [
+      {
+        "Title": "Account Holder Name",
+        "Headers": "accountHolderName",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab195"
+      },
+      {
+        "Title": "Bank Name",
+        "Headers": "bankName",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab196"
+      },
+      {
+        "Title": "Branch Name",
+        "Headers": "branchName",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab197"
+      },
+      {
+        "Title": "Account Number",
+        "Headers": "accountNumber",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab198"
+      },
+      {
+        "Title": "IFSC Code",
+        "Headers": "ifscCode",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab199"
+      },
+      {
+        "Title": "Account Type",
+        "Headers": "accountType",
+        "Type": "Dropdown",
+        "_id": "66b34b204ecde7c5bfeab200"
+      },
+      {
+        "Title": "UPI ID",
+        "Headers": "upiId",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab201"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab202",
+    "Page": "medical",
+    "PageFields": [
+      {
+        "Title": "Height (cm)",
+        "Headers": "heightCm",
+        "Type": "NumberField",
+        "_id": "66b34b204ecde7c5bfeab203"
+      },
+      {
+        "Title": "Weight (kg)",
+        "Headers": "weightKg",
+        "Type": "NumberField",
+        "_id": "66b34b204ecde7c5bfeab204"
+      },
+      {
+        "Title": "Allergies",
+        "Headers": "allergies",
+        "Type": "MultiSelect",
+        "_id": "66b34b204ecde7c5bfeab205"
+      },
+      {
+        "Title": "Chronic Diseases",
+        "Headers": "chronicDiseases",
+        "Type": "MultiSelect",
+        "_id": "66b34b204ecde7c5bfeab206"
+      },
+      {
+        "Title": "Current Medications",
+        "Headers": "currentMedications",
+        "Type": "MultiSelect",
+        "_id": "66b34b204ecde7c5bfeab207"
+      },
+      {
+        "Title": "Disability Status",
+        "Headers": "disabilityStatus",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab208"
+      },
+      {
+        "Title": "Disability Details",
+        "Headers": "disabilityDetails",
+        "Type": "TextArea",
+        "_id": "66b34b204ecde7c5bfeab209"
+      },
+      {
+        "Title": "Vision Issue",
+        "Headers": "visionIssue",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab210"
+      },
+      {
+        "Title": "Hearing Issue",
+        "Headers": "hearingIssue",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab211"
+      },
+      {
+        "Title": "Respiratory Issue",
+        "Headers": "respiratoryIssue",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab212"
+      },
+      {
+        "Title": "Skin Condition",
+        "Headers": "skinCondition",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab213"
+      },
+      {
+        "Title": "Medical Fitness Status",
+        "Headers": "medicalFitnessStatus",
+        "Type": "Dropdown",
+        "_id": "66b34b204ecde7c5bfeab214"
+      },
+      {
+        "Title": "Work Restrictions",
+        "Headers": "workRestrictions",
+        "Type": "MultiSelect",
+        "_id": "66b34b204ecde7c5bfeab215"
+      },
+      {
+        "Title": "Medical Examination Date",
+        "Headers": "medicalExaminationDate",
+        "Type": "DateField",
+        "_id": "66b34b204ecde7c5bfeab216"
+      },
+      {
+        "Title": "Medical Certificate Expiry Date",
+        "Headers": "medicalCertificateExpiryDate",
+        "Type": "DateField",
+        "_id": "66b34b204ecde7c5bfeab217"
+      },
+      {
+        "Title": "Medical Certificate URL",
+        "Headers": "medicalCertificateUrl",
+        "Type": "FileUpload",
+        "_id": "66b34b204ecde7c5bfeab218"
+      },
+      {
+        "Title": "Examined By Doctor",
+        "Headers": "examinedByDoctor",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab219"
+      },
+      {
+        "Title": "Medical Remarks",
+        "Headers": "medicalRemarks",
+        "Type": "TextArea",
+        "_id": "66b34b204ecde7c5bfeab220"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab221",
+    "Page": "compliance",
+    "PageFields": [
+      {
+        "Title": "Police Verification Status",
+        "Headers": "policeVerificationStatus",
+        "Type": "Dropdown",
+        "_id": "66b34b204ecde7c5bfeab222"
+      },
+      {
+        "Title": "Police Verification Date",
+        "Headers": "policeVerificationDate",
+        "Type": "DateField",
+        "_id": "66b34b204ecde7c5bfeab223"
+      },
+      {
+        "Title": "Police Verification Expiry Date",
+        "Headers": "policeVerificationExpiryDate",
+        "Type": "DateField",
+        "_id": "66b34b204ecde7c5bfeab224"
+      },
+      {
+        "Title": "Police Verification Document URL",
+        "Headers": "policeVerificationDocumentUrl",
+        "Type": "FileUpload",
+        "_id": "66b34b204ecde7c5bfeab225"
+      },
+      {
+        "Title": "Background Verification Status",
+        "Headers": "backgroundVerificationStatus",
+        "Type": "Dropdown",
+        "_id": "66b34b204ecde7c5bfeab226"
+      },
+      {
+        "Title": "Background Verification Remarks",
+        "Headers": "backgroundVerificationRemarks",
+        "Type": "TextArea",
+        "_id": "66b34b204ecde7c5bfeab227"
+      },
+      {
+        "Title": "Age Verified",
+        "Headers": "ageVerified",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab228"
+      },
+      {
+        "Title": "Identity Verified",
+        "Headers": "identityVerified",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab229"
+      },
+      {
+        "Title": "Employment Verified",
+        "Headers": "employmentVerified",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab230"
+      },
+      {
+        "Title": "Documents Verified",
+        "Headers": "documentsVerified",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab231"
+      },
+      {
+        "Title": "Verified By",
+        "Headers": "verifiedBy",
+        "Type": "Dropdown",
+        "_id": "66b34b204ecde7c5bfeab232"
+      },
+      {
+        "Title": "Verified At",
+        "Headers": "verifiedAt",
+        "Type": "DateTimeField",
+        "_id": "66b34b204ecde7c5bfeab233"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab221",
+    "Page": "compliance",
+    "PageFields": [
+      {
+        "Title": "Police Verification Status",
+        "Headers": "policeVerificationStatus",
+        "Type": "Dropdown",
+        "_id": "66b34b204ecde7c5bfeab222"
+      },
+      {
+        "Title": "Police Verification Date",
+        "Headers": "policeVerificationDate",
+        "Type": "DateField",
+        "_id": "66b34b204ecde7c5bfeab223"
+      },
+      {
+        "Title": "Police Verification Expiry Date",
+        "Headers": "policeVerificationExpiryDate",
+        "Type": "DateField",
+        "_id": "66b34b204ecde7c5bfeab224"
+      },
+      {
+        "Title": "Police Verification Document URL",
+        "Headers": "policeVerificationDocumentUrl",
+        "Type": "FileUpload",
+        "_id": "66b34b204ecde7c5bfeab225"
+      },
+      {
+        "Title": "Background Verification Status",
+        "Headers": "backgroundVerificationStatus",
+        "Type": "Dropdown",
+        "_id": "66b34b204ecde7c5bfeab226"
+      },
+      {
+        "Title": "Background Verification Remarks",
+        "Headers": "backgroundVerificationRemarks",
+        "Type": "TextArea",
+        "_id": "66b34b204ecde7c5bfeab227"
+      },
+      {
+        "Title": "Age Verified",
+        "Headers": "ageVerified",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab228"
+      },
+      {
+        "Title": "Identity Verified",
+        "Headers": "identityVerified",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab229"
+      },
+      {
+        "Title": "Employment Verified",
+        "Headers": "employmentVerified",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab230"
+      },
+      {
+        "Title": "Documents Verified",
+        "Headers": "documentsVerified",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab231"
+      },
+      {
+        "Title": "Verified By",
+        "Headers": "verifiedBy",
+        "Type": "Dropdown",
+        "_id": "66b34b204ecde7c5bfeab232"
+      },
+      {
+        "Title": "Verified At",
+        "Headers": "verifiedAt",
+        "Type": "DateTimeField",
+        "_id": "66b34b204ecde7c5bfeab233"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "66b34b204ecde7c5bfeab234",
+    "Page": "safety",
+    "PageFields": [
+      {
+        "Title": "Induction Completed",
+        "Headers": "inductionCompleted",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab235"
+      },
+      {
+        "Title": "Induction Date",
+        "Headers": "inductionDate",
+        "Type": "DateField",
+        "_id": "66b34b204ecde7c5bfeab236"
+      },
+      {
+        "Title": "Induction Expiry Date",
+        "Headers": "inductionExpiryDate",
+        "Type": "DateField",
+        "_id": "66b34b204ecde7c5bfeab237"
+      },
+      {
+        "Title": "Induction Certificate No",
+        "Headers": "inductionCertificateNo",
+        "Type": "CustomTextField",
+        "_id": "66b34b204ecde7c5bfeab238"
+      },
+      {
+        "Title": "Induction Certificate URL",
+        "Headers": "inductionCertificateUrl",
+        "Type": "FileUpload",
+        "_id": "66b34b204ecde7c5bfeab239"
+      },
+      {
+        "Title": "Safety Training Completed",
+        "Headers": "safetyTrainingCompleted",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab240"
+      },
+      {
+        "Title": "Work at Height Trained",
+        "Headers": "workAtHeightTrained",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab241"
+      },
+      {
+        "Title": "Confined Space Trained",
+        "Headers": "confinedSpaceTrained",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab242"
+      },
+      {
+        "Title": "Electrical Safety Trained",
+        "Headers": "electricalSafetyTrained",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab243"
+      },
+      {
+        "Title": "Fire Safety Trained",
+        "Headers": "fireSafetyTrained",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab244"
+      },
+      {
+        "Title": "First Aid Trained",
+        "Headers": "firstAidTrained",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab245"
+      },
+      {
+        "Title": "PPE Issued",
+        "Headers": "ppeIssued",
+        "Type": "Checkbox",
+        "_id": "66b34b204ecde7c5bfeab246"
+      },
+      {
+        "Title": "Safety Remarks",
+        "Headers": "safetyRemarks",
+        "Type": "TextArea",
+        "_id": "66b34b204ecde7c5bfeab247"
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "6a79dcacc065fcae15b3e824",
+    "Page": "sections",
+    "PageFields": [
+      {
+        "Title": "Zone",
+        "Headers": "zone",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+        "endpoint": "zones",
+        "key": "areaName",
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+      {
+        "Title": "Area Name",
+        "Headers": "areaName",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+      {
+        "Title": "Responsible Senior",
+        "Headers": "responsibleSenior",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cc1",
+        "endpoint": "users",
+        "key": "name"
+      },
+      {
+        "Title": "Work Description",
+        "Headers": "workDescription",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+      {
+        "Title": "Requirements",
+        "Headers": "requirements",
+        "Type": "secondaryForm",
+        "_id": "66b230b6cc8539b4ed3861cc4",
+        "key": "list",
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+      {
+        "Title": "Total Planned Workers",
+        "Headers": "totalPlannedWorkers",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+        "key": "numeric",
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+
+      {
+        "Title": "Remarks",
+        "Headers": "remarks",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+        "key": "numeric",
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "6a79dcacc065fcae15b3e824",
+    "Page": "labour-registration",
+    "PageFields": [
+      {
+        "Title": "First Name",
+        "Headers": "firstName",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+      {
+        "Title": "Last Name",
+        "Headers": "lastName",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+      {
+        "Title": "Project Name",
+        "Headers": "project",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cc1",
+
+        "endpoint": "projects",
+        "key": "projectName"
+      },
+      {
+        "Title": "Photo",
+        "Headers": "photoUrl",
+        "Type": "imagepicker",
+        "_id": "66b230b6cc8539b4ed3861cc7",
+        "endpoint": "labourPhoto"
+      },
+      {
+        "Title": "Date of Birth",
+        "Headers": "dateOfBirth",
+        "Type": "datepicker",
+        "_id": "66b230b6cc8539b4ed3861cc4",
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+      {
+        "Title": "Gender",
+        "Headers": "gender",
+        "Type": "simpledropdown",
+        "Options": ["Male", "Female", "Other"],
+        "_id": "66b230b6cc8539b4ed3861cc7",
+        "permissions": {
+          "view": ["UAUC Creation", "UAUC Prevention Action"],
+          "edit": ["UAUC Creation"]
+        }
+      },
+      {
+        "Title": "Phone/Mobile Number",
+        "Headers": "mobile",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+        "key": "numeric",
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+      {
+        "Title": "Permanant Address",
+        "Headers": "permanentAddress",
+        "Type": "secondaryForm",
+        "_id": "66b230b6cc8539b4ed3861cc4",
+        "key": "map",
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+      {
+        "Title": "Skills",
+        "Headers": "skills",
+        "Type": "secondaryForm",
+        "key": "list",
+        "_id": "66b34b204ecde7c5bfeab153",
+
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+
+      {
+        "Title": "Identity",
+        "Headers": "identity",
+        "Type": "secondaryForm",
+        "_id": "66b230b6cc8539b4ed3861cc4",
+        "key": "map",
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+
+      {
+        "Title": "Emergency Contact",
+        "Headers": "emergencyContact",
+        "Type": "secondaryForm",
+        "_id": "66b230b6cc8539b4ed3861cc4",
+        "key": "map",
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "6a79dcacc065fcae15b3e824",
+    "Page": "attendanceInfo",
+    "PageFields": [
+      {
+        "Title": "Project Name",
+        "Headers": "project",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cc1",
+        "endpoint": "projects",
+        "key": "projectName",
+        "permissions": {
+          "view": ["Workpermit Creation", "UAUC Prevention Action"],
+          "edit": ["Workpermit Creation"]
+        }
+      },
+      {
+        "Title": "Zone",
+        "Headers": "zone",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+        "endpoint": "zones",
+        "key": "areaName",
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+      {
+        "Title": "Section",
+        "Headers": "section",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+
+      {
+        "Title": "Responsible Engineer",
+        "Headers": "responsibleEngineer",
+        "Type": "dropdown",
+        "_id": "66b230b6cc8539b4ed3861cc4",
+        "endpoint": "users",
+        "key": "name",
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+      {
+        "Title": "Work Activity",
+        "Headers": "workActivity",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+      {
+        "Title": "Shift",
+        "Headers": "shift",
+        "Type": "simpledropdown",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+        "Options": ["General", "Day", "Night", "Rotational"],
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+      {
+        "Title": "Work Description",
+        "Headers": "workDescription",
+        "Type": "CustomTextField",
+        "_id": "66b230b6cc8539b4ed3861cc9",
+
+        "permissions": {
+          "view": ["Safety Creation", "UAUC Prevention Action"],
+          "edit": ["Safety Creation"]
+        }
+      },
+      {
+        "Title": "In Time",
+        "Headers": "inTime",
+        "Type": "timepicker",
+        "required": "false",
+        "_id": "66b230b6cc8539b4ed3861cd2",
+        "permissions": {
+          "view": ["Workpermit Creation", "UAUC Prevention Action"],
+          "edit": ["Workpermit Creation"]
+        }
+      },
+      {
+        "Title": "Out Time",
+        "Headers": "outTime",
+        "Type": "timepicker",
+        "required": "false",
+        "_id": "66b230b6cc8539b4ed3861cd2",
+        "permissions": {
+          "view": ["Workpermit Creation", "UAUC Prevention Action"],
+          "edit": ["Workpermit Creation"]
+        }
+      }
+    ],
+    "__v": 0
+  }
+]

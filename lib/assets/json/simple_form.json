@@ -1,0 +1,152 @@
+{
+  "attendanceInfo": [
+    {
+      "key": "project",
+      "label": "Project Name",
+      "type": "dropdown",
+      "source": "projects",
+      "path": "projectName",
+      "default": "all"
+    },
+    {
+      "key": "zoneArea",
+      "label": "Zone",
+      "type": "dropdown",
+      "source": "zones",
+      "path": "areaName",
+      "default": "all"
+    },
+
+    {
+      "key": "section",
+      "label": "Section",
+      "type": "text",
+      "path": "section",
+      "default": ""
+    },
+    {
+      "key": "responsibleEngineer",
+      "label": "Responsible Engineer",
+      "type": "dropdown",
+      "source": "users",
+      "path": "name",
+      "default": "all"
+    },
+    {
+      "key": "workActivity",
+      "label": "Work Activity",
+      "type": "text",
+      "path": "workActivity",
+      "default": ""
+    },
+    {
+      "key": "shift",
+      "label": "Shift",
+      "type": "simpleDropdown",
+      "options": [
+        "General Shift",
+        "Morning Shift",
+        "Evening Shift",
+        "Night Shift",
+        "Rotational Shift"
+      ],
+      "default": "all"
+    },
+    {
+      "key": "workDescription",
+      "label": "Work Description",
+      "type": "text",
+      "path": "workDescription",
+      "default": ""
+    },
+    {
+      "key": "inTime",
+      "label": "In Time",
+      "type": "time",
+      "path": "inTime",
+      "default": ""
+    },
+    {
+      "key": "outTime",
+      "label": "Out Time",
+      "type": "time",
+      "path": "outTime",
+      "default": ""
+    }
+  ],
+  "mobilisationInfo": [
+    {
+      "key": "planName",
+      "label": "Plan Name",
+      "type": "text",
+      "path": "section",
+      "default": ""
+    },
+    {
+      "key": "project",
+      "label": "Project Name",
+      "type": "dropdown",
+      "source": "projects",
+      "path": "projectName",
+      "default": "all"
+    },
+    {
+      "key": "periodStartDate",
+      "label": "Period Starting Date",
+      "type": "date",
+      "path": "date",
+      "default": ""
+    },
+    {
+      "key": "periodEndDate",
+      "label": "Period Ending Date",
+      "type": "date",
+      "path": "date",
+      "default": ""
+    },
+    {
+      "key": "totalPlannedWorkers",
+      "label": "Total Planned Workers",
+      "type": "text",
+      "path": "section",
+      "default": ""
+    },
+    {
+      "key": "status",
+      "label": "Status",
+      "type": "simpleDropdown",
+      "options": [
+        "Draft",
+        "Submitted",
+        "Approved",
+        "In Progress",
+        "Completed",
+        "Cancelled"
+      ],
+      "default": "all"
+    },
+
+    {
+      "key": "revisionNo",
+      "label": "Revision No",
+      "type": "text",
+      "path": "section",
+      "default": ""
+    },
+    {
+      "key": "remarks",
+      "label": "Remarks",
+      "type": "text",
+      "path": "section",
+      "default": ""
+    },
+    {
+      "key": "createdBy",
+      "label": "Created By",
+      "type": "dropdown",
+      "source": "users",
+      "path": "name",
+      "default": "all"
+    }
+  ]
+}

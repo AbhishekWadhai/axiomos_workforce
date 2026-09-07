@@ -1,0 +1,490 @@
+[
+  {
+    "moduleName": "labour-registration",
+    "type": "regularList",
+    "tileTitle1": "remarks",
+    "tileTitle2": "createdby",
+    "tileTitle3": "date",
+    "filters": [
+      {
+        "key": "project",
+        "label": "Project",
+        "type": "dropdown",
+        "source": "projects",
+        "path": "projectName",
+        "default": "all"
+      },
+      {
+        "key": "permitsType",
+        "label": "Permit Type",
+        "type": "dropdown",
+        "source": "permitstype",
+        "path": "permitsType",
+        "default": "all"
+      },
+      {
+        "key": "from",
+        "label": "From",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      },
+      {
+        "key": "to",
+        "label": "To",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      }
+    ],
+    "editAllowed": ["createdby", "verifiedBy", "approvalBy"],
+    "permissions": ["Workpermit Creation"]
+  },
+  {
+    "moduleName": "format",
+    "type": "tabBased",
+    "tabs": ["All", "Permit", "HSE", "Inspection"],
+    "tabFilters": {
+      "HSE": { "category": "HSE" },
+      "Permit": { "category": "Permit" },
+      "Inspection": { "category": "Inspection" }
+    },
+    "tileTitle1": "FormatName",
+    "tileTitle2": "category",
+    "tileTitle3": "",
+    "filters": [
+      {
+        "key": "project",
+        "label": "Project",
+        "type": "dropdown",
+        "source": "projects",
+        "path": "_id",
+        "default": "all"
+      },
+      {
+        "key": "permitsType",
+        "label": "Permit Type",
+        "type": "multiselect",
+        "source": "permitstype",
+        "path": "permitsType",
+        "default": "all"
+      },
+      {
+        "key": "from",
+        "label": "From",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      },
+      {
+        "key": "to",
+        "label": "To",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      }
+    ],
+    "editAllowed": ["createdby", "verifiedBy", "approvalBy"],
+    "permissions": ["Workpermit Creation"]
+  },
+  {
+    "moduleName": "workpermit",
+    "type": "tabBased",
+    "tabs": ["All", "Pending", "Verified", "Approved"],
+    "tabFilters": {
+      "Pending": { "verifiedDone": false, "approvalDone": false },
+      "Verified": { "verifiedDone": true, "approvalDone": false },
+      "Approved": { "verifiedDone": true, "approvalDone": true }
+    },
+    "tileTitle1": "permitTypes",
+    "tileTitle2": "workDescription",
+    "tileTitle3": "date",
+    "filters": [
+      {
+        "key": "project",
+        "label": "Project",
+        "type": "dropdown",
+        "source": "projects",
+        "path": "_id",
+        "default": "all"
+      },
+      {
+        "key": "permitsType",
+        "label": "Permit Type",
+        "type": "multiselect",
+        "source": "permitstype",
+        "path": "permitsType",
+        "default": "all"
+      },
+      {
+        "key": "from",
+        "label": "From",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      },
+      {
+        "key": "to",
+        "label": "To",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      }
+    ],
+    "editAllowed": ["createdby", "verifiedBy", "approvalBy"],
+    "permissions": ["Workpermit Creation"]
+  },
+
+  {
+    "moduleName": "meeting",
+    "type": "regularList",
+    "tileTitle1": "typeOfTopic",
+    "tileTitle2": "attendeesNos",
+    "tileTitle3": "date",
+    "filters": [
+      {
+        "key": "typeOfTopic",
+        "label": "Topics",
+        "type": "multiselect",
+        "source": "topic",
+        "path": "topicTypes",
+        "default": "all"
+      },
+      {
+        "key": "from",
+        "label": "From",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      },
+      {
+        "key": "to",
+        "label": "To",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      }
+    ],
+    "editAllowed": ["createdby", "TbtGivenBy"],
+    "permissions": ["Safety Creation"]
+  },
+
+  {
+    "moduleName": "induction",
+    "type": "regularList",
+    "tileTitle1": "typeOfTopic",
+    "tileTitle2": "attendeesNos",
+    "tileTitle3": "date",
+    "filters": [
+      {
+        "key": "q",
+        "label": "Search Topic",
+        "type": "text",
+        "path": "typeOfTopic",
+        "default": ""
+      },
+      {
+        "key": "project",
+        "label": "Project",
+        "type": "dropdown",
+        "source": "projects",
+        "path": "projectName",
+        "default": "all"
+      },
+      {
+        "key": "from",
+        "label": "From",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      },
+      {
+        "key": "to",
+        "label": "To",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      }
+    ],
+    "editAllowed": ["createdby", "instructionBy"],
+    "permissions": ["Safety Creation"]
+  },
+
+  {
+    "moduleName": "safetyreport",
+    "type": "regularList",
+    "tileTitle1": "createdAt",
+    "tileTitle2": "project",
+    "tileTitle3": "",
+    "filters": [
+      {
+        "key": "status",
+        "label": "Status",
+        "type": "dropdown",
+        "source": "statuses",
+        "path": "status",
+        "default": "all"
+      },
+      {
+        "key": "project",
+        "label": "Project",
+        "type": "dropdown",
+        "source": "projects",
+        "path": "projectName",
+        "default": "all"
+      },
+      {
+        "key": "from",
+        "label": "From",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      },
+      {
+        "key": "to",
+        "label": "To",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      }
+    ],
+    "editAllowed": ["createdby"],
+    "permissions": ["Safety Creation"]
+  },
+
+  {
+    "moduleName": "uauc",
+    "type": "tabBased",
+    "tabs": ["All", "Open", "Closed"],
+    "tabFilters": {
+      "Open": { "status": "Open" },
+      "Closed": { "status": "Closed" }
+    },
+    "tileTitle1": "observation",
+    "tileTitle2": "area",
+    "tileTitle3": "date",
+    "filters": [
+      {
+        "key": "riskValue",
+        "label": "Risk Value",
+        "type": "dropdown",
+        "source": "RiskRating",
+        "path": "severity",
+        "default": "all"
+      },
+      {
+        "key": "hazards",
+        "label": "Hazards",
+        "type": "multiselect",
+        "source": "hazards",
+        "path": "hazards",
+        "default": "all"
+      },
+      {
+        "key": "assignedTo",
+        "label": "Assigned To",
+        "type": "multiselect",
+        "source": "user",
+        "path": "name",
+        "default": "all"
+      },
+      {
+        "key": "observation",
+        "label": "Observation",
+        "type": "text",
+        "source": "uaucStatus",
+        "path": "status",
+        "default": "all"
+      },
+      {
+        "key": "area",
+        "label": "Area",
+        "type": "text",
+        "source": "areas",
+        "path": "area._id",
+        "default": "all"
+      },
+      {
+        "key": "from",
+        "label": "From",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      },
+      {
+        "key": "to",
+        "label": "To",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      }
+    ],
+    "editAllowed": ["createdby", "observer", "assignedTo", "actionTakenBy"],
+    "permissions": ["UAUC Creation"]
+  },
+
+  {
+    "moduleName": "incident",
+    "type": "regularList",
+    "tileTitle1": "workActivity",
+    "tileTitle2": "project",
+    "tileTitle3": "date",
+    "filters": [
+      {
+        "key": "severity",
+        "label": "Severity",
+        "type": "dropdown",
+        "source": "severities",
+        "path": "severity",
+        "default": "all"
+      },
+      {
+        "key": "project",
+        "label": "Project",
+        "type": "dropdown",
+        "source": "projects",
+        "path": "projectName",
+        "default": "all"
+      },
+      {
+        "key": "from",
+        "label": "From",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      },
+      {
+        "key": "to",
+        "label": "To",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      }
+    ],
+    "editAllowed": [
+      "createdby",
+      "observer",
+      "incidentReportedBy",
+      "actionTakenBy"
+    ]
+  },
+  {
+    "moduleName": "specific",
+    "type": "regularList",
+    "tileTitle1": "typeOfTopic",
+    "tileTitle2": "attendeesNos",
+    "tileTitle3": "date",
+    "filters": [
+      {
+        "key": "severity",
+        "label": "Severity",
+        "type": "dropdown",
+        "source": "severities",
+        "path": "severity",
+        "default": "all"
+      },
+      {
+        "key": "project",
+        "label": "Project",
+        "type": "dropdown",
+        "source": "projects",
+        "path": "projectName",
+        "default": "all"
+      },
+      {
+        "key": "from",
+        "label": "From",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      },
+      {
+        "key": "to",
+        "label": "To",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      }
+    ],
+    "permissions": ["Safety Creation"]
+  },
+  {
+    "moduleName": "checklist",
+    "type": "regularList",
+    "tileTitle1": "description",
+    "tileTitle2": "assignedTo",
+    "tileTitle3": "date",
+    "filters": [
+      {
+        "key": "severity",
+        "label": "Severity",
+        "type": "dropdown",
+        "source": "severities",
+        "path": "severity",
+        "default": "all"
+      },
+      {
+        "key": "project",
+        "label": "Project",
+        "type": "dropdown",
+        "source": "projects",
+        "path": "projectName",
+        "default": "all"
+      },
+      {
+        "key": "from",
+        "label": "From",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      },
+      {
+        "key": "to",
+        "label": "To",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      }
+    ],
+    "editAllowed": ["createdby", "verifiedBy", "approvalBy"]
+  },
+  {
+    "moduleName": "labour",
+    "type": "regularList",
+    "tileTitle1": "name",
+    "tileTitle2": "skillLevel",
+    "tileTitle3": "experienceInYears",
+    "filters": [
+      {
+        "key": "severity",
+        "label": "Severity",
+        "type": "dropdown",
+        "source": "severities",
+        "path": "severity",
+        "default": "all"
+      },
+      {
+        "key": "project",
+        "label": "Project",
+        "type": "dropdown",
+        "source": "projects",
+        "path": "projectName",
+        "default": "all"
+      },
+      {
+        "key": "from",
+        "label": "From",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      },
+      {
+        "key": "to",
+        "label": "To",
+        "type": "date",
+        "path": "date",
+        "default": ""
+      }
+    ]
+  }
+]

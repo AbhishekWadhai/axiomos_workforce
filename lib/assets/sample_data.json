@@ -1,0 +1,52 @@
+{
+  "company": "687f00000000000000000001",
+  "workerCode": "LAB-2026-0000123",
+  "eprNo": "EPR-10821",
+  "labourName": "Ramesh Kumar Yadav",
+  "fatherOrSpouseName": "Mahesh Kumar Yadav",
+  "dateOfBirth": "1992-05-15T00:00:00.000Z",
+  "gender": "MALE",
+  "mobile": "9876543210",
+  "alternateMobile": "9123456780",
+  "photoUrl": "https://example.com/uploads/labour/ramesh-kumar-yadav.jpg",
+  "address": {
+    "line1": "House No. 24, Shivaji Nagar",
+    "line2": "Near Main Market",
+    "village": "Karchana",
+    "district": "Prayagraj",
+    "state": "Uttar Pradesh",
+    "pincode": "212301"
+  },
+  "identity": {
+    "aadhaarMasked": "XXXX-XXXX-4521",
+    "aadhaarHash": "a18bc47d93484fcf728d239150c68c42e619f5044b648d2561c946bf801efd76",
+    "uanNo": "100123456789",
+    "panNo": "ABCDE1234F",
+    "esicNo": "31001234567890123"
+  },
+  "emergencyContact": {
+    "name": "Suresh Kumar Yadav",
+    "relationship": "BROTHER",
+    "mobile": "9988776655"
+  },
+  "defaultTrade": "687f00000000000000000004",
+  "status": "ACTIVE",
+  "blacklist": {
+    "isBlacklisted": false,
+    "reason": "",
+    "blacklistedAt": null,
+    "blacklistedBy": null
+  },
+  "onboarding": {
+    "source": "MOBILE_APP",
+    "registeredAtProject": "687f00000000000000000002",
+    "registeredBy": "687f00000000000000000006",
+    "deviceId": "ANDROID-SM-A556E-001",
+    "offlineCreated": false,
+    "clientGeneratedId": "MOBILE-LABOUR-20260723-001"
+  },
+  "createdBy": "687f00000000000000000006",
+  "updatedBy": null,
+  "deletedAt": null
+}
+
